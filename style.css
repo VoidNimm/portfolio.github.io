@@ -1,0 +1,418 @@
+html {
+    background: url("img/pawel-czerwinski-8MrUiSlpmlQ-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    scroll-behavior:smooth;
+}
+
+body {
+    text-decoration:none;
+    /* background: linear-gradient(95deg, rgb(255, 255, 255) 0%, #000000ea  10%); */
+    min-height:1500px;
+    font-family:sans-serif;
+    text-transform:uppercase;
+}
+
+#main-title {
+    display:flex;
+    /* background-color:rgb(0, 221, 255); */
+    margin-top:100px;
+    margin-bottom:2.5rem;
+}
+
+/* PROFILE START */
+
+#main-title .main-profile {
+    border-radius:15px;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    padding:1.5rem;
+    margin:1% -15% 0 10%;
+}
+
+#main-title .main-profile img {
+    border-radius:50%; 
+    background-size:50%;
+    width:20vw;
+    transition:0.5s;
+}
+
+.main-profile img:hover {
+    transform: scale(1.5);
+    transition:0.3s;
+    box-shadow:5px 5px 6px #1d1d1d;
+}
+
+/* PROFILE END */
+
+/* ME START */
+
+#main-title .main-me {
+    background-color:white;
+    padding:1.5rem 25% 0 4rem;
+    border-radius:15px;
+    margin:1% 12% 0 20%;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    text-shadow:1px 1px 3px white;
+}
+
+#main-title .main-me h2 {
+    font-size:4.5em;
+    text-align:start;
+}
+
+#main-title .main-me h1 {
+    font-size:1.7em;
+}
+
+#main-title .main-me p {
+    font-size:1.5em;
+    text-align:start;
+}
+
+#main-title .main-me span {
+    color: #0ef6cc;
+    text-shadow: 2px 2px 3px black;
+}
+
+#main-title .main-me a {
+    text-decoration:none;
+    color: #0ef6cc;
+    transition:0.5s;
+}
+
+#main-title .main-me span a:hover {
+    background-color:#0ef6cc;
+    border-radius:10px;
+    padding:5px;
+    color:black;
+    text-shadow:1px 1px 3px rgb(0, 255, 145);
+    transition:0.5s;
+}
+  
+
+/* ME END */
+
+.main-aboutme {
+    margin:3% 12% 3% 10%;
+    padding:1rem;     
+    border-radius:15px;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    text-shadow:1px 1px 1px white;
+}
+
+.main-aboutme h3 {
+    text-align:start;
+    font-size:1.5em;
+    font-weight:1.5em;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:5rem;
+}
+
+.social-media img {
+    width:10vh;
+    border-radius:15px;
+    transition:0.5s
+}
+
+.social-media img:hover {
+    transform: scale(1.5);
+    transition:0.3s;
+    box-shadow:5px 5px 12px #00000035;
+}
+
+.school-at {
+    margin:3% 12% 3% 10%;
+    padding:1rem;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    border-radius:15px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:2rem;
+}
+
+.school-at img {
+        border-radius:25px;; 
+        width:25vh;
+        transition:0.5s;
+}
+
+.school-at .smk6 img {
+    width:18vh;
+    border-radius:0;
+}
+
+.school-at img:hover {
+    transform: scale(1.5);
+    transition:0.3s;
+    box-shadow:5px 5px 12px #00000035;
+}
+
+.contact {
+    display:flex;
+    margin-top:1rem;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    border-radius:25px;
+    margin:0 12% 1rem 10%;
+    padding:1rem 1rem 5em 1rem;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contact h3 {
+    font-size:3rem;
+    text-align:center;
+    flex:1 1 45rem;
+}
+
+.contact .form {
+    font-size:1.7rem;
+    display:flex;
+    align-items:center;
+    margin-top:2rem;
+    border:1px solid #eee;
+    padding-left:2rem;
+}
+
+
+footer {
+    margin-top:3.5em;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    font-size:2.5em;
+    font-weight:200;
+}
+
+
+
+/* MEDIA QUERIS */
+
+/* TABLET */
+@media (max-width:834px) {
+    html {
+        font-size:68%;
+        max-width:100%;
+        width: auto;
+        height: auto;
+    }
+
+    #main-title .main-me {
+        padding:1.5rem 25% 0 4rem;
+        border-radius:15px;
+        margin:1% 10% 0 20%;
+        border-top:2px solid #ffffff75;
+        border-left:2px solid #ffffff75;
+        box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    }
+    
+    #main-title .main-me h2 {
+        font-size:5em;
+        text-align:start;
+    }
+
+    #main-title .main-me h1 {
+        font-size:1.9em;
+    }
+
+    .main-aboutme {
+        margin:3% 10% 3% 10%;
+        padding:1rem;     
+        border-radius:15px;
+        border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    }
+    
+    .main-aboutme h3 {
+        text-align:center;
+        font-size:2em;
+    }
+    
+    .main-aboutme p {
+        text-align:start;
+        font-size:1.2em;
+    }
+
+    /* SOCIAL MEDIA */
+.social-media {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:5rem;
+}
+
+.social-media img {
+    width:5vh;
+    border-radius:15px;
+}
+
+.school-at {
+    margin:3% 10% 3% 10%;
+    padding:1rem;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    border-radius:15px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:2rem;
+}
+
+.school-at .smk6 img {
+    width:13vh;
+}
+
+.school-at img {
+        border-radius:15x;; 
+        width:12vh;
+        transition:0.5s;
+}
+
+}
+
+/* Mobile */
+@media (max-width:450px) {
+    html {
+        font-size:57%;
+        max-width:100%;
+        width: auto;
+        height: auto;
+    }
+
+    #main-title .main-profile {
+        border-radius:15px;
+        border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+        padding:25px;
+        margin:1% 10px 0 5%;
+    }
+    
+    #main-title .main-profile img {
+        border-radius:50%; 
+        background-size:50%;
+        width:30vw;
+        transition:0.5s;
+    }
+    
+    .main-profile img:hover {
+        transform: scale(1.5);
+        transition:0.3s;
+        box-shadow:5px 5px 12px #00000035;
+    }
+
+    #main-title .main-me {
+        padding:0.5rem 0.5rem 1rem 1.5rem;
+        border-radius:15px;
+        margin:1% 5% 0 1%;
+        border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    text-shadow:1px 1px 3px white;
+    }
+    
+    #main-title .main-me h2 {
+        font-size:3.5em;
+        text-align:start;
+    }
+
+    #main-title .main-me h1 {
+        font-size:1.5em;
+        justify-content:start;
+    }
+    
+
+    .main-aboutme {
+        margin:3% 5% 3% 5%;
+        padding:0.5rem 5% 1rem 5%;     
+        border-radius:15px;
+        border-top:2px solid #ffffff75;
+        border-left:2px solid #ffffff75;
+        box-shadow:5px 5px 12px #00000035;
+        background: #ffffff25;
+        backdrop-filter: blur(4px);
+    }
+    
+    .main-aboutme h3 {
+        text-align:start;
+        font-size:1.6em;
+    }
+    
+        /* SOCIAL MEDIA */
+.social-media {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:3rem;
+}
+
+.social-media img {
+    width:5vh;
+}
+
+.school-at {
+    margin:3% 5% 3% 5%;
+    padding:1rem;
+    border-top:2px solid #ffffff75;
+    border-left:2px solid #ffffff75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    border-radius:15px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    gap:2rem;
+}
+
+.school-at img {
+        border-radius:10px;; 
+        width:10vh;
+        transition:0.5s;
+}
+
+.school-at .smk6 img {
+    width:10vh;
+}
+
+}
